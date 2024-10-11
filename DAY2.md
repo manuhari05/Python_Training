@@ -116,3 +116,39 @@ else:
 - It checks if the list is empty, and if so, prints a message.
 - The code iterates through the remaining strings, trimming the longest prefix until it matches the start of each string.
 - Finally, it prints the longest common prefix found.
+
+### Problem 4 : Roman Numeral Converter
+
+ To convert a string representing a Roman numeral into its integer value.
+
+**Code**:
+```python
+def roman_to_integer(s):
+    # Dictionary mapping Roman numerals to their integer values
+    r_i = {"I": 1, "V": 5, "X": 10, "L": 50, "C": 100, "D": 500, "M": 1000}
+    
+    # Initialize the total integer value
+    integer = 0 
+
+    # Loop through each character in the Roman numeral string
+    for i in range(len(s)):
+        # Check if the current numeral is less than the next numeral
+        if i < len(s) - 1 and r_i[s[i]] < r_i[s[i + 1]]:
+            # Subtract value if it’s less than the next numeral
+            integer -= r_i[s[i]]  
+        else:
+            # Otherwise, add the value
+            integer += r_i[s[i]]  
+
+    # Return the computed integer value
+    return integer  
+
+# Example usage
+roman = "XIV"
+op = roman_to_integer(roman)
+print(op)  # Output: 14
+
+```
+### Explaination:
+- A dictionary r_i maps each Roman numeral to its integer value.
+- The function iterates through the string, checking if the current numeral is less than the next one. If it is, the value is subtracted; otherwise, it is added.
