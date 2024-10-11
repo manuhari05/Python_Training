@@ -138,7 +138,7 @@ Unordered collection of unique elements.
 - **clear()**: Removes all elements.
 
 ### Examples
-```python
+```python 
 s = {1, 2, 3}
 s.add(4)                       # {1, 2, 3, 4}
 s.remove(2)                   # {1, 3, 4}
