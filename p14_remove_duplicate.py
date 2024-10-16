@@ -18,7 +18,7 @@ def r_d(l):
     return l  # Return the modified list
 
 # Input list with duplicates
-list1 = [0, 1, 1, 1, 2, 2, 3, 3, 3]
+list1 = [0, 1, 1, 1, 2, 2, 3, 3, 3,3]
 # Call the function to remove excess duplicates
 op = r_d(list1)
 # Print the modified list with duplicates removed
