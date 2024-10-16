@@ -23,7 +23,7 @@ def jump(l):
              # Return the total number of jumps
             return c 
 # Example list of jump values
-l1=[2,0,1,0,4]  
+l1=[2,3,1,0,4]  
 # Call the jump function with the list
 op=jump(l1)  
 # Check if the jump was successful
