@@ -7,7 +7,7 @@ def jump(l):
     while i<len(l):  
         #print(l[i])  # Uncomment to see the current jump value
         # Check if the jump exceeds the bounds of the list
-        if i+l[i]>len(l): 
+        if i+l[i]>len(l)-1: 
             # Return False if jump is not possible 
             return False  
         # If the current jump value is 0, can't proceed
@@ -20,7 +20,7 @@ def jump(l):
         c+=1  
         # Check if we have reached the last index
         if i==len(l)-1:  
-             # Return the total number of jumps
+             # Return the total number osf jumps
             return c 
 # Example list of jump values
 l1=[2,3,1,0,4]  
